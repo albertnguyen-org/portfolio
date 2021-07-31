@@ -3,7 +3,6 @@ import "./style.css";
 import menu_data from "../../data/menu.json";
 import { MenuDataType } from "../../utils/types/menu.type";
 import { Link } from "react-router-dom";
-import styled from 'styled-components'
 interface Props {
   display: boolean;
 }
@@ -27,11 +26,6 @@ function ListMenu() {
     </div>
   );
 };
-
-const IsComming = styled.p`
-  color: white;
-  font-size : 50px;
-`
 
 function MenuOverlay(props: Props) {
   return (
