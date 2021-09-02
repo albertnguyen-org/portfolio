@@ -1,0 +1,22 @@
+[
+  {
+    "id": "shop",
+    "title": "Shopping",
+    "path": "/shop-page"
+  },
+  {
+    "id": "about",
+    "title": "About Me",
+    "path": ""
+  },
+  {
+    "id": "blog",
+    "title": "Blog",
+    "path": "/blog-page"
+  },
+  {
+    "id": "date",
+    "title": "Date",
+    "path": "/date-page"
+  }
+]

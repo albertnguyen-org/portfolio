@@ -7,6 +7,8 @@ import 'antd/dist/antd.css';
 import 'ant-design-pro/dist/ant-design-pro.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 
+require('dotenv').config();
+
 ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

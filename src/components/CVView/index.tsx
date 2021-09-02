@@ -1,31 +1,19 @@
 import React from 'react'
-import {Document, Page } from 'react-pdf';
+import styled from 'styled-components'
 
-const filePath = "../../assets/pdf/CV.pdf"
+
+const Container = styled.div`
+  width : 100%;
+  height: 100%;
+  background-color: pink
+`
 
 class CVView extends React.Component{
-        state = {
-        numPages: null,
-        pageNumber: 1,
-      }
-     
-      onDocumentLoadSuccess = (numPages:any) => {
-        this.setState({ numPages });
-      }
-     
       render() {
-        const { pageNumber, numPages } = this.state;
-     
         return (
-          <div>
-            <Document
-              file={filePath}
-              onLoadSuccess={this.onDocumentLoadSuccess}
-            >
-              <Page pageNumber={pageNumber} />
-            </Document>
-            <p>Page {pageNumber} of {numPages}</p>
-          </div>
+          <Container>
+            cv
+          </Container>
         );
       }
       

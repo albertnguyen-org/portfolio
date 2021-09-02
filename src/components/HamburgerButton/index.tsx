@@ -11,7 +11,6 @@ const StyledContainerMenu = styled.div`
 `
 
 interface States {
-
     x?: string,
     y?: string
 }

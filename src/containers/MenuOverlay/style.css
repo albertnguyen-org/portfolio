@@ -1,19 +1,20 @@
-.container-menu-overlay{
-    background-color : black;
-    height : 100%;
-    width : 100%;
-    justify-content : center;
-    align-items : center;
-    position: fixed;
+.container-menu-overlay {
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
     z-index: 2;
-    display: flex
+    display: flex;
+    left: 135px;
+    top: 50px;
 }
 
-.container-menu-item-list{
-    padding : 20px;
+.container-menu-item-list {
+    padding: 20px;
 }
 
-.container-menu-item-list > .txt-title,.txt-title{
+.container-menu-item-list > .txt-title,
+.txt-title {
     color: white;
     font-size: 24pt;
     font-weight: bold;
@@ -25,5 +26,5 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center
+    justify-content: center;
 }

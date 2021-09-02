@@ -1,0 +1,29 @@
+[
+    {
+        "id": "post_1",
+        "title" : "Newest Post",
+        "desc" : "Newest post description",
+        "date" : "06/01/2020",
+        "author" : "Admin",
+        "type" : "post",
+        "status" : "newest"
+    },
+    {
+        "id": "post_2",
+        "title" : "Post 2",
+        "desc" : "Newest post description",
+        "date" : "06/01/2020",
+        "author" : "Admin",
+        "type" : "post",
+        "status" : "normal"
+    },
+    {
+        "id": "post_3",
+        "title" : "Post 3",
+        "desc" : "Newest post description",
+        "date" : "06/01/2020",
+        "author" : "Admin",
+        "type" : "post",
+        "status" : "normal"
+    }
+]

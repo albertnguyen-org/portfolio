@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 import ShopLogo from '../ShopLogo'
 import ShopMenu from '../ShopMenu'
-import ShopRightView from "../ShopRightView"
+import ShopRightView from '../ShopRightView'
 
 const SCShopHeaderContainer = styled.div`
     height : 150px;
