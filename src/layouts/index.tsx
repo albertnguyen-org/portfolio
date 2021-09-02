@@ -11,8 +11,7 @@ interface States {
     displayMenu: boolean,
     toggle: boolean,
     colorBugger: string,
-    lblButtonViewMore: string,
-    linkFile : string
+    lblButtonViewMore: string
 }
 
 interface Props {
@@ -27,7 +26,7 @@ const SCRow = styled(Row)`
     padding-top: 10%;
 `
 
-const SCButtonViewMore = styled.div`
+const SCButtonViewMore = styled.button`
     background-color : black;
     height: 50px;
     width: 100px;
@@ -43,7 +42,7 @@ const SCButtonViewMore = styled.div`
     margin-left: 50%;
 `
 const LblViewMore = styled.a`
-    color : white
+    color : white;
 `
 export default class AppLayout extends React.Component<Props, States> {
 
@@ -53,10 +52,9 @@ export default class AppLayout extends React.Component<Props, States> {
             displayMenu: false,
             toggle: false,
             colorBugger: 'black',
-            lblButtonViewMore: 'view more',
-            linkFile : 'https://drive.google.com/open?id=1G1qm3_F9j5nqs_lplV8X19H4IVXHJhBT'
+            lblButtonViewMore: 'view more'
         }
-    }   
+    }
 
     handleClickMenuButton = () => {
         this.setState({
@@ -64,25 +62,22 @@ export default class AppLayout extends React.Component<Props, States> {
             displayMenu: !this.state.displayMenu,
             colorBugger: !this.state.toggle ? 'white' : 'black'
         });
-        console.log(`Toggle : ${this.state.toggle} \n Display Menu : ${this.state.displayMenu}`)
-        console.log("Pressed button");
     }
 
     render() {
-        const { linkFile} = this.state;
         return (
             <div className="container-layout">
-                <CustomHelmet/>
+                <CustomHelmet />
                 <div className="container-blur-effect" />
                 <Header colorBugger={this.state.colorBugger} toggle={this.state.toggle} onClickMenuButton={this.handleClickMenuButton} />
                 <MenuOverlay display={this.state.displayMenu} />
                 <SCRow>
                     <ShortResume />
-                    <SCButtonViewMore>
-                        <LblViewMore href={linkFile} target="_bank">{this.state.lblButtonViewMore.toLowerCase()}</LblViewMore>
+                    <SCButtonViewMore disabled>
+                        {/* <LblViewMore target="_bank">{this.state.lblButtonViewMore.toLowerCase()}</LblViewMore> */}
                     </SCButtonViewMore>
                 </SCRow>
             </div>
         )
     }
-}   
+}
