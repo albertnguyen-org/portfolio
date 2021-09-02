@@ -41,9 +41,6 @@ const SCButtonViewMore = styled.button`
     transform: translate(-50%,50%);
     margin-left: 50%;
 `
-const LblViewMore = styled.a`
-    color : white;
-`
 export default class AppLayout extends React.Component<Props, States> {
 
     constructor(props: Props) {

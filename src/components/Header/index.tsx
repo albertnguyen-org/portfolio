@@ -26,7 +26,6 @@ export default class Header extends React.Component<Props,{}>{
         return (
             <StyledContainerHeader className="container-header">
                 <HamburgerButton color={this.props.colorBugger} toggle={this.props.toggle} onClick={this.props.onClickMenuButton.bind(this)} />
-
                 <SocialView />
             </StyledContainerHeader>
         )
