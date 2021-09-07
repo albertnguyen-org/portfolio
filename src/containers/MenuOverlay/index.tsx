@@ -30,10 +30,7 @@ function ListMenu() {
 function MenuOverlay(props: Props) {
   return (
     props.display ? <div className="container-menu-overlay">
-       <ListMenu /> 
-       {/* <IsComming>
-         FEATURES IS COMMING
-       </IsComming> */}
+      <ListMenu />
     </div> : null
   );
 }
