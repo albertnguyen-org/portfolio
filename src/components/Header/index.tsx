@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import HamburgerButton from '../HamburgerButton';
+// import HamburgerButton from '../HamburgerButton';
 import SocialView from '../SocialView/';
 
 const StyledContainerHeader = styled.div`
@@ -25,7 +25,7 @@ export default class Header extends React.Component<Props,{}>{
     render() {
         return (
             <StyledContainerHeader className="container-header">
-                <HamburgerButton color={this.props.colorBugger} toggle={this.props.toggle} onClick={this.props.onClickMenuButton.bind(this)} />
+                {/* <HamburgerButton color={this.props.colorBugger} toggle={this.props.toggle} onClick={this.props.onClickMenuButton.bind(this)} /> */}
                 <SocialView />
             </StyledContainerHeader>
         )

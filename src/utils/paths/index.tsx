@@ -1,7 +1,4 @@
 export const PATH_ROOT = "/";
-export const PATH_BLOG_PAGE = "/blog-page";
-export const PATH_SHOP_PAGE = "/shop-page";
-export const PATH_DATE_PAGE = "/date-page";
 export const CV_PAGE = "/cv-page";
 
 

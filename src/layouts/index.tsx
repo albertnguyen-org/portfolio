@@ -26,21 +26,6 @@ const SCRow = styled(Row)`
     padding-top: 10%;
 `
 
-const SCButtonViewMore = styled.button`
-    background-color : black;
-    height: 50px;
-    width: 100px;
-    font-size: 12px;
-    display : flex;
-    justify-content: center;
-    align-items:center;
-    border: none;
-    outline: transparent;
-    color: white;
-    align-self:center;
-    transform: translate(-50%,50%);
-    margin-left: 50%;
-`
 export default class AppLayout extends React.Component<Props, States> {
 
     constructor(props: Props) {
@@ -70,9 +55,6 @@ export default class AppLayout extends React.Component<Props, States> {
                 <MenuOverlay display={this.state.displayMenu} />
                 <SCRow>
                     <ShortResume />
-                    <SCButtonViewMore disabled>
-                        {/* <LblViewMore target="_bank">{this.state.lblButtonViewMore.toLowerCase()}</LblViewMore> */}
-                    </SCButtonViewMore>
                 </SCRow>
             </div>
         )

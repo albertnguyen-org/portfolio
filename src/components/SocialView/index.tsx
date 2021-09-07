@@ -10,14 +10,6 @@ const Ic_LINKED_IN = require("../../assets/icons/ic_linkedin.svg");
 const Ic_INSTAGRAM = require("../../assets/icons/ic_instagram.svg");
 const Ic_GITHUB = require("../../assets/icons/ic_github.svg");
 
-const StyledContainerSocialView = styled.div`
-    width : auto;
-    height : 100%;
-    background-color : transparent;
-    display: flex;
-    align-items: center;
-    justify-content: flex-end;
-`
 const socialIconData = [
     {
         key : "ic_fb",
@@ -41,6 +33,14 @@ const socialIconData = [
     }
 ]
 
+const StyledContainerSocialView = styled.div`
+    width : auto;
+    height : 100%;
+    background-color : transparent;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+`
 export default class SocialView extends React.Component {
     render() {
         return (
