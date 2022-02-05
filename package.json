@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://sr-albert.github.io/portfolio",
+  "homepage": "https://sr-albert.github.io/portfolio",
   "dependencies": {
     "@material-ui/core": "^4.6.1",
     "@types/jest": "24.0.18",
