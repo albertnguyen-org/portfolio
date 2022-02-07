@@ -1,1 +1,16 @@
-$title_main_color : red;
+$title_main_color: red;
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.center {
+    justify-content: center;
+    align-items: center;
+}

@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import { HashRouter as Router, Route, Switch } from 'react-router-dom'
 import { PATH_ROOT, CV_PAGE } from "../utils/paths"
 import { NotFound } from "../containers/Result"
 import AppLayout from '../layouts'
@@ -20,7 +20,7 @@ const DataRoute = [
 
 const AppRoute = () => {
     return (
-        <Router basename={process.env.PUBLIC_URL}>
+        <Router>
             <Switch>
                 {
                     DataRoute.map(i => {

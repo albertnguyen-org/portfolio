@@ -1,11 +1,10 @@
-import { Row } from 'antd';
 import React from 'react';
-import styled from 'styled-components';
 import CustomHelmet from "../components/CustomHelmet"
+import DevelopmentComponent from '../components/Development';
 import Header from '../components/Header';
 import ShortResume from '../components/ShortResume';
 import MenuOverlay from '../containers/MenuOverlay';
-import "./style.css";
+import "./style.scss";
 
 interface States {
     displayMenu: boolean,
@@ -14,21 +13,9 @@ interface States {
     lblButtonViewMore: string
 }
 
-interface Props {
+export default class AppLayout extends React.Component<any, States> {
 
-}
-
-const SCRow = styled(Row)`
-    position : absolute !important;
-    bottom : 0px;
-    height: 100% !important;
-    width: 100% ;
-    padding-top: 10%;
-`
-
-export default class AppLayout extends React.Component<Props, States> {
-
-    constructor(props: Props) {
+    constructor(props: any) {
         super(props);
         this.state = {
             displayMenu: false,
@@ -50,12 +37,16 @@ export default class AppLayout extends React.Component<Props, States> {
         return (
             <div className="container-layout">
                 <CustomHelmet />
-                <div className="container-blur-effect" />
+                {/* <div className="container-blur-effect" /> */}
                 <Header colorBugger={this.state.colorBugger} toggle={this.state.toggle} onClickMenuButton={this.handleClickMenuButton} />
                 <MenuOverlay display={this.state.displayMenu} />
-                <SCRow>
+
+                <div className='container-layout__content'>
                     <ShortResume />
-                </SCRow>
+                </div>
+                <div className='container-layout__footer'>
+                    <DevelopmentComponent />
+                </div>
             </div>
         )
     }
