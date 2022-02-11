@@ -20,7 +20,7 @@
     "ant-design-pro": "^1.4.4",
     "antd": "^3.23.5",
     "dotenv": "^8.1.0",
-    "node-sass": "^4.13.0",
+    "node-sass": "^7.0.0",
     "react": "^16.10.1",
     "react-dom": "^16.10.1",
     "react-helmet": "^5.2.1",
